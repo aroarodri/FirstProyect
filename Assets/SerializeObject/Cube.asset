@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Cube
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 8569812295280621759, guid: 0e4c002bc4d9eb3478f68af578c579dd, type: 3}
+  prefabName: MyCube
   numberOfPrefabsToCreate: 5
   spawnPoints:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 1.2653768, y: 4.83307, z: 2.1880364}
+  - {x: 1.139514, y: 2.3388433, z: 2.5556695}
+  - {x: 3.39658, y: 2.8303099, z: 2.7532158}
+  - {x: 1.8011998, y: -3.510401, z: 1.3877141}
+  - {x: -0.7738323, y: -0.039860725, z: 0.8664484}

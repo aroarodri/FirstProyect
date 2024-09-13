@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
     public SpawnManagerScriptableObject spawnManagerValues;
     private int numberOfSpawnPoints = 0;
     private Vector3 spawnAreaSize = new Vector3(10, 10, 10);
+    private int n = 1;
 
     void Start()
     {
@@ -35,7 +36,11 @@ public class Spawner : MonoBehaviour
         {
             GameObject cube = Instantiate(spawnManagerValues.prefabToSpawn, spawnManagerValues.spawnPoints[currentSpawnPointIndex], Quaternion.identity);
 
+            cube.name = spawnManagerValues.prefabName + n;
+
             currentSpawnPointIndex = (currentSpawnPointIndex + 1) % spawnManagerValues.spawnPoints.Length;
+
+            n++;
         }
     }
 
